@@ -13,7 +13,8 @@
         "--socket=wayland",
         "--socket=pcsc",
         "--share=network",
-        "--device=dri"
+        "--device=dri",
+        "--filesystem=xdg-download"
     ],
     "build-options": {
         "prepend-ld-library-path": "/usr/lib/sdk/llvm20/lib",
@@ -96,7 +97,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/chrisduerr/WebKit",
-                    "commit": "937c2d0607cc115f331eda107cde18283afb0f5c"
+                    "commit": "669cffd0c3be3505ef0a5963caf1c7824fbe9c0f"
                 }
             ]
         },
@@ -117,7 +118,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/catacombing/kumo",
-                    "commit": "3a9ed9a6e410bef666acd0dac8f3f31eeda028aa"
+                    "commit": "271c19e071582dcfb32a3e3e52ff438897904815"
                 }
             ]
         }

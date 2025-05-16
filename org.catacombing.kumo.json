@@ -97,7 +97,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/chrisduerr/WebKit",
-                    "commit": "3c783e3a318867026cd5ed215d2fc1f5b47ae6de"
+                    "commit": "779dab38f44ac4579dc0a42be62e2331b47ba1ab"
                 }
             ]
         },

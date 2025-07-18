@@ -97,7 +97,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/chrisduerr/WebKit",
-                    "commit": "8b9939407af1c2707505c60a8cbd1a35e1851e7e"
+                    "commit": "744e1e32d1ff2626a3fba63782920dafa6d4e654"
                 }
             ]
         },
@@ -118,7 +118,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/catacombing/kumo",
-                    "commit": "1ec9c5af6ff331c31dadd3e107616de46a8cfadc"
+                    "commit": "7af759b3f33a12400e448b2c1e7f5000312156c1"
                 }
             ]
         }

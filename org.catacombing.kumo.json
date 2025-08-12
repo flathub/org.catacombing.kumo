@@ -118,7 +118,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/catacombing/kumo",
-                    "commit": "5bc3c6282bc34044fe3a9cb00617baeff681e55a"
+                    "commit": "ebafef2fd9bd1a7d5e9ae2aee4619a812c502943"
                 }
             ]
         }

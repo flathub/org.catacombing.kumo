@@ -71,6 +71,37 @@
             ]
         },
         {
+            "name": "wpewebkit",
+            "buildsystem": "cmake-ninja",
+            "builddir": true,
+            "config-opts": [
+                "-DPORT=WPE",
+                "-DCMAKE_BUILD_TYPE=Release",
+                "-DCMAKE_C_FLAGS_RELEASE=-DNDEBUG",
+                "-DCMAKE_CXX_FLAGS_RELEASE=-DNDEBUG",
+                "-DUSE_SKIA_OPENTYPE_SVG=OFF",
+                "-DUSE_SYSPROF_CAPTURE=OFF",
+                "-DUSE_LIBBACKTRACE=OFF",
+                "-DENABLE_WPE_PLATFORM=ON",
+                "-DENABLE_BUBBLEWRAP_SANDBOX=OFF",
+                "-DENABLE_WPE_PLATFORM_DRM=OFF",
+                "-DENABLE_SPEECH_SYNTHESIS=OFF",
+                "-DENABLE_DOCUMENTATION=OFF",
+                "-DENABLE_MINIBROWSER=OFF"
+            ],
+            "build-options": {
+                "cflags": "-g1",
+                "cxxflags": "-g1"
+            },
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/chrisduerr/WebKit",
+                    "commit": "4b18b11777a4a3e622619e3125ed86d6756d4854"
+                }
+            ]
+        },
+        {
             "name": "kumo",
             "buildsystem": "simple",
             "build-commands": [

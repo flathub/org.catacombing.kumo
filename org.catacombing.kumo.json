@@ -97,7 +97,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/chrisduerr/WebKit",
-                    "commit": "9f05f5c4444e070b8e0fc9bf40b3a86111ebfc04"
+                    "commit": "4b18b11777a4a3e622619e3125ed86d6756d4854"
                 }
             ]
         },
@@ -106,7 +106,7 @@
             "buildsystem": "simple",
             "build-commands": [
                 "cargo --offline fetch",
-                "cargo --offline build --release",
+                "MOZJS_ARCHIVE=libmozjs.tar.gz cargo --offline build --release",
                 "install -Dm 755 ./target/release/kumo /app/bin/kumo",
                 "install -Dm 644 ./logo.svg /app/share/icons/hicolor/scalable/apps/org.catacombing.kumo.svg",
                 "desktop-file-edit --set-icon=org.catacombing.kumo Kumo.desktop",
@@ -116,9 +116,23 @@
             "sources": [
                 "./cargo-sources.json",
                 {
+                    "type": "file",
+                    "url": "https://github.com/servo/mozjs/releases/download/mozjs-sys-v0.140.8-4/libmozjs-aarch64-unknown-linux-gnu.tar.gz",
+                    "dest-filename": "libmozjs.tar.gz",
+                    "sha256": "726d2019d727bc620fae1b2c6839062bdf7b7a3b10efa1465533e1efd1c81417",
+                    "only-arches": ["aarch64"]
+                },
+                {
+                    "type": "file",
+                    "url": "https://github.com/servo/mozjs/releases/download/mozjs-sys-v0.140.8-4/libmozjs-x86_64-unknown-linux-gnu.tar.gz",
+                    "dest-filename": "libmozjs.tar.gz",
+                    "sha256": "62f23e2f9da29cd08765998fd5e7154ce4d90ffb46a7a6c44e6f1f05c758bbbf",
+                    "only-arches": ["x86_64"]
+                },
+                {
                     "type": "git",
                     "url": "https://github.com/catacombing/kumo",
-                    "commit": "ca62b4de7094cad92725c6862ffd44a08773a900"
+                    "commit": "94b2ccbc2339500225f1d236b016602444882597"
                 }
             ]
         }

@@ -43,22 +43,6 @@
             ]
         },
         {
-            "name": "woff2",
-            "buildsystem": "cmake-ninja",
-            "config-opts": [
-                "-DCMAKE_BUILD_TYPE=Release",
-                "-DCMAKE_C_FLAGS_RELEASE=-DNDEBUG",
-                "-DCMAKE_CXX_FLAGS_RELEASE=-DNDEBUG"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://github.com/google/woff2/archive/v1.0.2.tar.gz",
-                    "sha256": "add272bb09e6384a4833ffca4896350fdb16e0ca22df68c0384773c67a175594"
-                }
-            ]
-        },
-        {
             "name": "libwpe",
             "buildsystem": "cmake-ninja",
             "config-opts": [
@@ -86,6 +70,7 @@
                 "-DUSE_SKIA_OPENTYPE_SVG=OFF",
                 "-DUSE_SYSPROF_CAPTURE=OFF",
                 "-DUSE_LIBBACKTRACE=OFF",
+                "-DUSE_WOFF2=OFF",
                 "-DENABLE_WPE_PLATFORM=ON",
                 "-DENABLE_BUBBLEWRAP_SANDBOX=OFF",
                 "-DENABLE_WPE_PLATFORM_DRM=OFF",

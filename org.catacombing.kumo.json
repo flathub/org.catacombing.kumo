@@ -32,6 +32,10 @@
                     "type": "archive",
                     "url": "https://dotat.at/prog/unifdef/unifdef-2.12.tar.gz",
                     "sha256": "fba564a24db7b97ebe9329713ac970627b902e5e9e8b14e19e024eb6e278d10b"
+                },
+                {
+                    "type": "patch",
+                    "path": "unifdef.patch"
                 }
             ],
             "cleanup": [
@@ -65,8 +69,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://wpewebkit.org/releases/libwpe-1.16.2.tar.xz",
-                    "sha256": "960bdd11c3f2cf5bd91569603ed6d2aa42fd4000ed7cac930a804eac367888d7"
+                    "url": "https://wpewebkit.org/releases/libwpe-1.16.3.tar.xz",
+                    "sha256": "c880fa8d607b2aa6eadde7d6d6302b1396ebc38368fe2332fa20e193c7ee1420"
                 }
             ]
         },

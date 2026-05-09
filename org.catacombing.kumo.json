@@ -130,8 +130,8 @@
                 },
                 {
                     "type": "git",
-                    "url": "https://github.com/catacombing/kumo",
-                    "commit": "a0a64f9a3f80833dbc35a12c5bfba24351893422"
+                    "url": "https://git.sr.ht/~undeadleech/kumo",
+                    "commit": "b9f9f783bf60c151805001a1de6ce25e52c73ea4"
                 }
             ]
         }

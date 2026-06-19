@@ -13,12 +13,6 @@
     },
     {
         "type": "git",
-        "url": "https://github.com/servo/stylo",
-        "commit": "a556f4cbd15fc289039261661b049a5dc845cd80",
-        "dest": "flatpak-cargo/git/stylo-a556f4c"
-    },
-    {
-        "type": "git",
         "url": "https://github.com/chrisduerr/servo",
         "commit": "ebaed340944436dc8807720056774a8cdbf2a967",
         "dest": "flatpak-cargo/git/servo-ebaed34"
@@ -9061,24 +9055,6 @@
         "type": "shell",
         "commands": [
             "cp -r --reflink=auto \"flatpak-cargo/git/stylo-49e912c/servo_arc\" \"cargo/vendor/servo_arc\""
-        ]
-    },
-    {
-        "type": "inline",
-        "contents": "[package]\nname = \"servo_arc\"\nversion = \"0.4.3\"\nauthors = [\"The Servo Project Developers\"]\nlicense = \"MIT OR Apache-2.0\"\nrepository = \"https://github.com/servo/stylo\"\ndescription = \"A fork of std::sync::Arc with some extra functionality and without weak references\"\nedition = \"2021\"\nreadme = \"../README.md\"\n\n[lib]\nname = \"servo_arc\"\npath = \"lib.rs\"\n\n[features]\ndefault = [\"track_alloc_size\"]\ngecko_refcount_logging = []\nservo = [\"serde\", \"track_alloc_size\"]\ntrack_alloc_size = []\n\n[dependencies]\nstable_deref_trait = \"1.0.0\"\n\n[dependencies.serde]\nversion = \"1.0\"\noptional = true\n",
-        "dest": "cargo/vendor/servo_arc",
-        "dest-filename": "Cargo.toml"
-    },
-    {
-        "type": "inline",
-        "contents": "{\"package\": null, \"files\": {}}",
-        "dest": "cargo/vendor/servo_arc",
-        "dest-filename": ".cargo-checksum.json"
-    },
-    {
-        "type": "shell",
-        "commands": [
-            "cp -r --reflink=auto \"flatpak-cargo/git/stylo-a556f4c/servo_arc\" \"cargo/vendor/servo_arc\""
         ]
     },
     {

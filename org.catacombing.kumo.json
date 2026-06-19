@@ -96,7 +96,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/chrisduerr/WebKit",
-                    "commit": "4b18b11777a4a3e622619e3125ed86d6756d4854"
+                    "commit": "351b27b392e0a1bfff2c477913057e141a11d75b"
                 }
             ]
         },
@@ -116,22 +116,22 @@
                 "./cargo-sources.json",
                 {
                     "type": "file",
-                    "url": "https://github.com/servo/mozjs/releases/download/mozjs-sys-v0.140.8-4/libmozjs-aarch64-unknown-linux-gnu.tar.gz",
+                    "url": "https://github.com/servo/mozjs/releases/download/mozjs-sys-v140.11.0-1/libmozjs-aarch64-unknown-linux-gnu.tar.gz",
                     "dest-filename": "libmozjs.tar.gz",
-                    "sha256": "726d2019d727bc620fae1b2c6839062bdf7b7a3b10efa1465533e1efd1c81417",
+                    "sha256": "bfe85955e34d4e4f30820d1d95dfff783bfe0d1b5b3d52827774823ca394057f",
                     "only-arches": ["aarch64"]
                 },
                 {
                     "type": "file",
-                    "url": "https://github.com/servo/mozjs/releases/download/mozjs-sys-v0.140.8-4/libmozjs-x86_64-unknown-linux-gnu.tar.gz",
+                    "url": "https://github.com/servo/mozjs/releases/download/mozjs-sys-v140.11.0-1/libmozjs-x86_64-unknown-linux-gnu.tar.gz",
                     "dest-filename": "libmozjs.tar.gz",
-                    "sha256": "62f23e2f9da29cd08765998fd5e7154ce4d90ffb46a7a6c44e6f1f05c758bbbf",
+                    "sha256": "e6522296660b9b70573a06a3eea8574482dc0740bafdd091d7ebedb982425aed",
                     "only-arches": ["x86_64"]
                 },
                 {
                     "type": "git",
                     "url": "https://git.sr.ht/~undeadleech/kumo",
-                    "commit": "b9f9f783bf60c151805001a1de6ce25e52c73ea4"
+                    "commit": "6c4d15b4e525bf1c9699e5491a78c0067149f53c"
                 }
             ]
         }
